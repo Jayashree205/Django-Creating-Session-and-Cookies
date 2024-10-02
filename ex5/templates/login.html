@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    {% load static %}  <!-- Add this line to load the static tag -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+    <center>   <h1>KAMARAJ COLLEGE OF ENGINEERING AND TECHNOLOGY</h1>
+        <h2>Web Application Using Django Framework</h2>
+        <h2><pre style="font-family: 'Times New Roman', Times, serif;">    T.Jayashree
+    III IT A [22UIT050]
+    </pre></h2>
+        <h2>Creating Session and Cookies Using Django</h2>
+    <form method="post" action="{% url 'ex5:login' %}">
+        {% csrf_token %}
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <button type="submit" id="button">Log In</button>
+    </form></center>
+</body>
+</html>

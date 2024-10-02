@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie App - Home</title>
+    <link rel="stylesheet" href="{% static 'cookieapp/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Cookie App</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'cookieapp:index' %}">Home</a></li>
+                <li><a href="{% url 'cookieapp:login' %}">Login</a></li>
+                <li><a href="{% url 'cookieapp:welcome' %}">Welcome</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home Page</h2>
+        <p>This is the home page of the Cookie App. Use the navigation menu to go to other pages.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cookie App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
